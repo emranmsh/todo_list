@@ -1,0 +1,46 @@
+ 
+body{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display:inherit;
+    margin-left: 5%;
+    border: 50px solid;
+    border-image: url(./assets/11718.jpg) 1000 round;
+    border-color: bisque;
+   
+}
+header{
+    background-color:bisque;
+    height:5vh; 
+    display: flex;
+    justify-content: center;
+    font-size: max(14px, 2.7vw);
+}
+nav{
+    background-color:bisque;
+    height:5vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: max(8px, 2.7vw);
+    box-shadow: inset 0px -1px 29px 10px rgba(0,0,0,0.24);
+}
+
+#content{
+    background-color: rgba(165, 42, 42, 0.356);
+    height:90vh;
+    font-size: max(8px, 2vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+    white-space: pre-wrap;
+    padding: 1%;
+    overflow-y: scroll;
+}
+
+#content div{
+    height: fit-content;
+    border-style: dashed;
+    width:auto;
+}
