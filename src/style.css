@@ -1,1 +1,118 @@
+/*General setup*/
+:root{
+    --color-doc:rgba(145, 191, 243, 0.349);
+    --color-div:rgba(54, 147, 170, 0.129); 
+    --content-color:rgba(255, 255, 255, 0.562); 
+    --button-color:rgba(0, 0, 0, 0.274);
+    --doc-border-radius:15px;
+}
+
+body{
+    display: grid;
+    flex-direction: row; 
+    grid-template-columns: 1fr 4fr 0.5fr; 
+    height: 100vh;
+    gap: 1%;
+    background-color: var(--color-doc);
+}
+
+body > div{
+    background-color: var(--color-div);
+    border-radius: var(--doc-border-radius);
+}
+
+.project-board>div.selected{
+    /*create toggle for selected class*/
+    background-color: var(--button-color);
+}
+
+/*Projects design*/
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-board{
+    height: 80vh;
+    width: 90%;
+    background-color: rgba(145, 191, 243, 0.349);
+    border-radius: var(--doc-border-radius);
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.projects>:nth-child(3){
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%; 
+    justify-items: center;
+    padding-top: 5%;
+}
+
+.projects>:nth-child(3) button{
+    border-radius: 30px;
+    width: 80%;
+}
+
+.project-board>div{
+    width:80%;
+    height: 5%;
+    background-color: var(--content-color);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    border-radius: var(--doc-border-radius);
+    font-size: clamp(10px, 25vw, 20px);
+    padding-left: 5%;
+    margin: 2.5% 0% 2.5% 0%;
+}
+
+/*Tasks design*/
+header{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+}
  
+header> button{
+    width: 70%;
+    height: 40%;
+    border-radius: 30px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+}
+.task-board{
+    width: 95%;
+    height: 85%;
+    background-color: var(--color-doc);
+    align-self: center;
+    border-radius: var(--doc-border-radius);
+    overflow: auto; 
+}
+
+button:hover{
+    background-color:var(--button-color);
+}
+
+/*Summary design*/
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-board{
+    width: 90%;
+    height: 85%;
+    background-color: var(--color-doc);
+    align-self: center;
+    border-radius: var(--doc-border-radius);
+}

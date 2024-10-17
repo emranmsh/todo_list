@@ -1,0 +1,10 @@
+title
+description
+due date
+priority
+notes
+checklist
+[default project folder, select which folder todo should be placed]
+[separate all logic from dom use solid principles]
+[view all projects, view all todos in projects,open todo to edit and select
+, delete todo]
