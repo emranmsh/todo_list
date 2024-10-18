@@ -95,9 +95,31 @@ header> button{
     background-color: var(--color-doc);
     align-self: center;
     border-radius: var(--doc-border-radius);
-    overflow: auto; 
+    overflow: auto;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 30%);
+    grid-auto-rows: 30%;
+    gap: 2%;
+    padding:1%;
+    scroll-padding-top: 10px;
 }
 
+.task-board>div{ 
+    border-style: solid;
+    
+}
+
+.task-board::-webkit-scrollbar, .project-board::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 100%;
+    background-color: var(--button-color);
+}
+.task-board::-webkit-scrollbar-thumb, .project-board::-webkit-scrollbar-thumb{
+    border-radius: 100%;
+    background-color: black;
+}
+ 
 button:hover{
     background-color:var(--button-color);
 }
@@ -115,4 +137,5 @@ button:hover{
     background-color: var(--color-doc);
     align-self: center;
     border-radius: var(--doc-border-radius);
+    padding:1%;
 }
