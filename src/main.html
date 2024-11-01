@@ -9,8 +9,7 @@
     <div class="projects">
         <h1>Projects</h1>
         <div class="project-board">
-            <div>Default</div>
-             
+                        
         </div>
         <div>
             <button class="add-p">
@@ -29,40 +28,7 @@
         </header>
         <div class="task-board">
             <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
-            <div class="selected">Default</div>
+    
         </div>
     </div>
     <div class="summary">
@@ -74,5 +40,36 @@
             <p>Total Tasks:0</p>
         </div>
     </div>
+
+    <dialog>
+        <form>
+             
+            <fieldset>
+                <label for="title">Title</label>
+                <input id = "title" type="text" required>
+                <label for="description">Description</label>
+                <input id="description" type="text" required> 
+            </fieldset>
+            <fieldset>
+                <label for="due-date">Due Date</label>
+                <input id="due-date" type="date" required>
+                <label for="priority">Priority(1-Most important, 2-Least)</label>
+                <select id="priority" type="text"  required>
+                    <option value="1">1</option>
+                    <option value="2">3</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="note-c">Notes</label>
+                <input id="note-c" type="input">
+            </fieldset>
+            <button class="submit">Submit</button>
+            <button class="close">Close</button>
+        </form>
+    </dialog>   
+    
  </body>
- </html>
+ </html> 
