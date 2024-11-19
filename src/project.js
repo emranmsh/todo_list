@@ -49,7 +49,7 @@ function addBtnHandler(){
 
 
 taskDel.addEventListener("click",()=>{
-    projectList[projPosition].deleteTask(0);
+    projectList[projPosition].deleteTask(prompt("Enter task number to delete")-1);
     /*ProjectObject.deleteTask()*/});
 
 

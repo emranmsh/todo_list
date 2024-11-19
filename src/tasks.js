@@ -17,6 +17,7 @@ function render(object, index){
 
     const desc=document.createElement("p");
     desc.textContent="Description: "+object.description;
+    desc.classList.add("desc");
 
     const due=document.createElement("p");
     due.textContent="Due Date: "+object.date;

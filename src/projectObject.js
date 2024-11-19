@@ -25,7 +25,6 @@ function ProjectObject(name){
         taskList.splice(position, 1);
         this.render();
     }
-    alert(taskList.length);
     }
 
     this.order=function(){
